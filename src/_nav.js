@@ -59,6 +59,15 @@ export default {
         }
       ]
     }
+    
+
+
+
+
+
+
+
+
     //     {
     //       name: 'Navs',
     //       url: '/base/navs',
@@ -247,6 +256,62 @@ export default {
     //   variant: 'danger',
     // },
     ],
-   }
+   },
+   {
+        name:'Menu',
+        icon:'icon-puzzle',
+        children:[
+        {
+            name:'Menu Type',
+            icon:'icon-puzzle',
+            children:[
+            {
+                name:'Create Menu Type',
+                icon:'icon-puzzle',
+                url:'base/Menu/CreateMenuType'
+            },
+            {
+                name:'Manage Menu Type',
+                icon:'icon-puzzle',
+                url:'base/Menu/ManageMenuType'
+            },
+            ]
+        },
+        {
+            name:'Menu Elements',
+            icon:'icon-puzzle',
+            children:[
+            {
+                name:'Create Elements',
+                icon:'icon-puzzle',
+                url:'base/Menu/CreateMenuElement'
+            },
+            {
+                name:'Manage Elements',
+                icon:'icon-puzzle',
+                url:'base/Menu/ManageMenuElement'
+            },
+            ]
+        },
+        {
+            name:'Menu Association',
+            icon:'icon-puzzle',
+            children:[
+            {
+                name:'Create Association',
+                icon:'icon-puzzle',
+                url:'base/Menu/CreateAssociation'
+            },
+            {
+                name:'Manage Association',
+                icon:'icon-puzzle',
+                url:'base/Menu/ManageAssociation'
+            },
+            ]
+        }
+        ]
+    }
+
+
   ]
 };
