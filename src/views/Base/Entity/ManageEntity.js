@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Badge, Card, CardBody, CardHeader, Col, Pagination, PaginationItem, PaginationLink, Row, Table } from 'reactstrap';
-import UpdateEntityType from './UpdateEntityType.js';
+import UpdateEntity from './UpdateEntity.js';
 import ReactDOM from 'react-dom';
 
 import {
@@ -26,7 +26,7 @@ import {
 class Tables extends Component {
 UpdateEntry(e){
    ReactDOM.render(
-    <UpdateEntityType/>,document.getElementById('root')
+    <UpdateEntity/>,document.getElementById('root')
   );
   }
   render() {
@@ -36,14 +36,14 @@ UpdateEntry(e){
           <Col xs="12" lg="6">
             <Card>
               <CardHeader>
-                <i className="fa fa-align-justify"></i> Delete Entity Type
+                <i className="fa fa-align-justify"></i> Delete Entity
               </CardHeader>
               <CardBody>
                 <Table responsive bordered>
                   <thead>
                   <tr>
-                    <th>Entity Type</th>
-                    <th>Entity Type Slug</th>
+                    <th>Entity name</th>
+                    <th>Entity slug</th>
                     <th>Option</th>
                   </tr>
                   </thead>

@@ -54,6 +54,19 @@ const ManageEntityType = Loadable({
   loading: Loading,
 });
 
+const CreateEntity = Loadable({
+  loader: () => import('./views/Base/Entity/CreateEntity'),
+  loading: Loading,
+});
+
+const ManageEntity = Loadable({
+  loader: () => import('./views/Base/Entity/ManageEntity'),
+  loading: Loading,
+});
+
+
+
+
 
 
 
@@ -214,13 +227,19 @@ const routes = [
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
   { path: '/base', exact: true, name: 'Base', component: Cards },
-  { path: '/base/cards', name: 'Cards', component: Cards },
+  
   { path: '/base/forms', name: 'Forms', component: Forms },
+
+
 
 
 
   { path: '/base/CreateEntityType', name: 'CreateEntityType', component: CreateEntityType },
   {path:  '/base/ManageEntityType', name: 'ManageEntityType', component:ManageEntityType},
+  {path: '/base/CreateEntity', name:'CreateEntity',component: CreateEntity},
+  {path: '/base/ManageEntity', name:'ManageEntity', component:ManageEntity},
+
+
 
 
 

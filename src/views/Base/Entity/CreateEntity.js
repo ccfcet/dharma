@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react'
+
 import {
   Badge,
   Button,
@@ -25,35 +26,16 @@ import {
   Row,
 } from 'reactstrap';
 
-class Forms extends Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.toggleFade = this.toggleFade.bind(this);
-    this.state = {
-      collapse: true,
-      fadeIn: true,
-      timeout: 300
-    };
-  }
-
-  toggle() {
-    this.setState({ collapse: !this.state.collapse });
-  }
-
-  toggleFade() {
-    this.setState((prevState) => { return { fadeIn: !prevState }});
-  }
-
-  render() {
-    return (
-      <div className="animated fadeIn">
+class CreateEntity extends React.Component{
+	render()
+	{
+		return(
+	<div className="animated fadeIn">
         <Row>
           <Col xs="12" sm="6">
             <Card>
               <CardHeader>
-                <strong>Entity Type</strong>
+                <strong>Entity</strong>
                 <small> Form</small>
               </CardHeader>
               <CardBody>
@@ -61,10 +43,14 @@ class Forms extends Component {
                   <Col xs="12">
                     <FormGroup>
                       <Label htmlFor="entity-type">Entity Type</Label>
-                      <Input type="text" id="entity-type" placeholder="Enter entity type" required />
+                      <Input type="select" name="entity-type" id="entity-type">
+                       
+                      </Input>
+                      <Label htmlFor="entity-name">Entity Name</Label>
+                      <Input type="text" id="entity-name" placeholder="Enter entity name" required />
                       <br/>
-                      <Label htmlFor="entity-type-slug">Entity Type Slug</Label>
-                      <Input type="text" id="entity-type-slug" placeholder="Enter entity type slug" required />
+                      <Label htmlFor="entity-slug">Entity Slug</Label>
+                      <Input type="text" id="entity-slug" placeholder="Enter entity slug" required />
                       <div>
                       <br/>
                       <Input type="submit" id="submit" value="Submit" />
@@ -78,8 +64,7 @@ class Forms extends Component {
           </Col>
         </Row>
       </div>
-    );
-  }
+			);
+	}
 }
-
-export default Forms;
+export default CreateEntity;

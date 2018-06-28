@@ -30,6 +30,18 @@ export default {
         //   url: '/base/dropdowns',
         //   icon: 'icon-puzzle',
         // },
+        {
+            name:'Create Entity',
+            icon:'icon-puzzle',
+            url:'/base/CreateEntity',
+        },
+        {
+            name:'Manage Entity',
+            icon:'icon-puzzle',
+            url:'/base/ManageEntity',
+        },
+        
+
 
       {
         name:'Entity Type',
