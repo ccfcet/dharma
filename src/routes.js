@@ -72,8 +72,14 @@ const ManageMenuType = Loadable({
   loader: () => import('./views/Base/Menu/MenuType/ManageMenuType'),
   loading: Loading,
 });
-
-
+const CreateMenuElement = Loadable({
+  loader: () => import('./views/Base/Menu/MenuElements/CreateMenuElement'),
+  loading: Loading,
+});
+const ManageMenuElement = Loadable({
+  loader: () => import('./views/Base/Menu/MenuElements/ManageMenuElement'),
+  loading:Loading ,
+});
 
 
 
@@ -248,6 +254,10 @@ const routes = [
   {path: '/base/ManageEntity', name:'ManageEntity', component:ManageEntity},
   {path: '/base/Menu/CreateMenuType', name:'CreateMenuType', component:CreateMenuType},
   {path: '/base/Menu/ManageMenuType', name:'ManageMenuType', component:ManageMenuType},
+  {path: '/base/Menu/CreateMenuElement', name:'CreateMenuElement', component:CreateMenuElement},
+  {path: '/base/Menu/ManageMenuElement', name:'ManageMenuElement', component:ManageMenuElement},
+
+
 
 
 
