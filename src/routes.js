@@ -78,7 +78,7 @@ const CreateMenuElement = Loadable({
 });
 const ManageMenuElement = Loadable({
   loader: () => import('./views/Base/Menu/MenuElements/ManageMenuElement'),
-  loading:Loading ,
+  loading: Loading ,
 });
 
 

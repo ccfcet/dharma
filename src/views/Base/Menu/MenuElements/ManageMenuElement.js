@@ -82,3 +82,4 @@ class ManageMenuElement extends React.Component{
 	}
 
 }
+export default ManageMenuElement;

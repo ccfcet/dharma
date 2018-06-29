@@ -20,7 +20,7 @@ class UpdateMenuElement extends React.Component{
 		<div >
           <Card style={{width:580}} className="main">
               <CardHeader>
-                <strong>Menu Type</strong>
+                <strong>Menu Element</strong>
                 <small> Form</small>
               </CardHeader>
               <CardBody>
@@ -46,7 +46,7 @@ class UpdateMenuElement extends React.Component{
       </div>
 
 
-			)
+			);
 	}
 } 
 export default UpdateMenuElement;
