@@ -310,8 +310,23 @@ export default {
             ]
         }
         ]
+    },
+    {
+        name:'People',
+        icon:'icon-puzzle',
+        children:[
+        {
+            name:'Create People',
+            icon:'icon-puzzle',
+            url:'base/People/CreatePeople'
+        },
+        {
+            name:'Manage People',
+            icon:'icon-puzzle',
+            url:'bae/People/ManagePeople'
+        }
+        ]
     }
-
 
   ]
 };

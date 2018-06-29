@@ -80,6 +80,11 @@ const ManageMenuElement = Loadable({
   loader: () => import('./views/Base/Menu/MenuElements/ManageMenuElement'),
   loading: Loading ,
 });
+const CreatePeople = Loadable({
+  loader: () => import('./views/Base/People/People/CreatePeople'),
+  loading:Loading,
+});
+
 
 
 
@@ -240,7 +245,7 @@ const routes = [
   { path: '/theme', exact: true, name: 'Theme', component: Colors },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
-  { path: '/base', exact: true, name: 'Base', component: Cards },
+  // { path: '/base', exact: true, name: 'Base', component: Cards },
   
   { path: '/base/forms', name: 'Forms', component: Forms },
 
@@ -256,7 +261,7 @@ const routes = [
   {path: '/base/Menu/ManageMenuType', name:'ManageMenuType', component:ManageMenuType},
   {path: '/base/Menu/CreateMenuElement', name:'CreateMenuElement', component:CreateMenuElement},
   {path: '/base/Menu/ManageMenuElement', name:'ManageMenuElement', component:ManageMenuElement},
-
+  {path: '/base/People/CreatePeople', name:'CreatePeople', component:CreatePeople},
 
 
 
