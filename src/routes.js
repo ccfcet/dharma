@@ -84,6 +84,19 @@ const CreatePeople = Loadable({
   loader: () => import('./views/Base/People/People/CreatePeople'),
   loading:Loading,
 });
+const Login=Loadable({
+  loader: () =>import('./views/Pages/Login/Login.js'),
+  loading: Loading,
+});
+const ManagePeople=Loadable({
+  loader: () =>import('./views/Base/People/People/ManagePeople'),
+  loading: Loading,
+});
+
+
+
+
+
 
 
 
@@ -238,10 +251,10 @@ const User = Loadable({
 
 
 
+
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
-  { path: '/', exact: true, name: 'Home', component: DefaultLayout },
-  { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/base', exact:true,name: 'Home', component: DefaultLayout },
   { path: '/theme', exact: true, name: 'Theme', component: Colors },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
@@ -253,15 +266,27 @@ const routes = [
 
 
 
+
+
+
+
+
+
   { path: '/base/CreateEntityType', name: 'CreateEntityType', component: CreateEntityType },
   {path:  '/base/ManageEntityType', name: 'ManageEntityType', component:ManageEntityType},
-  {path: '/base/CreateEntity', name:'CreateEntity',component: CreateEntity},
-  {path: '/base/ManageEntity', name:'ManageEntity', component:ManageEntity},
-  {path: '/base/Menu/CreateMenuType', name:'CreateMenuType', component:CreateMenuType},
-  {path: '/base/Menu/ManageMenuType', name:'ManageMenuType', component:ManageMenuType},
-  {path: '/base/Menu/CreateMenuElement', name:'CreateMenuElement', component:CreateMenuElement},
-  {path: '/base/Menu/ManageMenuElement', name:'ManageMenuElement', component:ManageMenuElement},
-  {path: '/base/People/CreatePeople', name:'CreatePeople', component:CreatePeople},
+  {path: '/base/CreateEntity', name:'CreateEntity',component: CreateEntity },
+  {path: '/base/ManageEntity', name:'ManageEntity', component:ManageEntity },
+  {path: '/base/CreateMenuType', name:'CreateMenuType', component:CreateMenuType },
+  {path: '/base/ManageMenuType', name:'ManageMenuType', component:ManageMenuType },
+  {path: '/base/CreateMenuElement', name:'CreateMenuElement', component:CreateMenuElement },
+  {path: '/base/ManageMenuElement', name:'ManageMenuElement', component:ManageMenuElement },
+  {path:'/base/CreatePeople' , name:'CreatePeople', component:CreatePeople},
+  {path:'/base/ManagePeople', name:'ManagePeople', component:ManagePeople},
+
+
+
+
+
 
 
 

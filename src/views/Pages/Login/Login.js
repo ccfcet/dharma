@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import { Button, Card, CardBody, CardGroup, Col, Container, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
-
+import Register from '../Register';
+import ReactDOM from 'react-dom';
 class Login extends Component {
+  handleClick()
+  {
+   ReactDOM.render(<Register/>,document.getElementById('root'));
+  }
   render() {
     return (
       <div className="app flex-row align-items-center">
@@ -43,9 +48,8 @@ class Login extends Component {
                   <CardBody className="text-center">
                     <div>
                       <h2>Sign up</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                      <Button color="primary" className="mt-3" active>Register Now!</Button>
+
+                      <Button color="primary" className="mt-3" active onClick={this.handleClick}>Register Now!</Button>
                     </div>
                   </CardBody>
                 </Card>

@@ -260,6 +260,7 @@ export default {
    {
         name:'Menu',
         icon:'icon-puzzle',
+        url: '/base',
         children:[
         {
             name:'Menu Type',
@@ -268,44 +269,29 @@ export default {
             {
                 name:'Create Menu Type',
                 icon:'icon-puzzle',
-                url:'base/Menu/CreateMenuType'
+                url:'/base/CreateMenuType'
             },
             {
                 name:'Manage Menu Type',
                 icon:'icon-puzzle',
-                url:'base/Menu/ManageMenuType'
+                url:'/base/ManageMenuType'
             },
             ]
         },
         {
             name:'Menu Elements',
             icon:'icon-puzzle',
+            url: '/base',
             children:[
             {
                 name:'Create Elements',
                 icon:'icon-puzzle',
-                url:'base/Menu/CreateMenuElement'
+                url:'/base/CreateMenuElement'
             },
             {
                 name:'Manage Elements',
                 icon:'icon-puzzle',
-                url:'base/Menu/ManageMenuElement'
-            },
-            ]
-        },
-        {
-            name:'Menu Association',
-            icon:'icon-puzzle',
-            children:[
-            {
-                name:'Create Association',
-                icon:'icon-puzzle',
-                url:'base/Menu/CreateAssociation'
-            },
-            {
-                name:'Manage Association',
-                icon:'icon-puzzle',
-                url:'base/Menu/ManageAssociation'
+                url:'/base/ManageMenuElement'
             },
             ]
         }
@@ -314,19 +300,24 @@ export default {
     {
         name:'People',
         icon:'icon-puzzle',
+        url: '/base',
         children:[
-        {
+         {
             name:'Create People',
             icon:'icon-puzzle',
-            url:'base/People/CreatePeople'
+            url:'/base/CreatePeople'
         },
         {
             name:'Manage People',
             icon:'icon-puzzle',
-            url:'bae/People/ManagePeople'
-        }
-        ]
-    }
+            url:'/base/ManagePeople'
+        },
+
+        ],
+
+
+    },
+
 
   ]
 };

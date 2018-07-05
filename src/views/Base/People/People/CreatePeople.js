@@ -81,11 +81,14 @@ class CreatePeople extends React.Component{
                   </FormGroup>
                       <Label htmlFor="date-of-birth">Date Of Birth</Label>
                       <Input type="date" id="date-of-birth" name="date-of-birth" placeholder="date" />
-
+                      <br/>
+                      <Label htmlFor="nationality">Nationality</Label>
+                      <Input type="select" id="nationality" name="nationality"/>
                       <div>
                       <br/>
-                      <Input type="submit" id="submit" value="Submit" />
-                     
+                      <Input type="submit" id="submit" value="Submit">
+                      </Input>
+            
                       </div>
                     </FormGroup>
                   </Col>
