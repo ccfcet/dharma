@@ -2,6 +2,8 @@ import React from 'react';
 import Loadable from 'react-loadable'
 
 import DefaultLayout from './containers/DefaultLayout';
+import DharmaLayout from './containers/DharmaLayout';
+
 
 function Loading() {
   return <div>Loading...</div>;
@@ -40,48 +42,48 @@ const Forms = Loadable({
 
 
 
-
+//custom
 
 
 const CreateEntityType = Loadable({
-  loader: () => import('./views/Base/EntityType/CreateEntityType'),
+  loader: () => import('./views/Dharma/EntityType/CreateEntityType'),
   loading: Loading,
 });
 
 
 const ManageEntityType = Loadable({
-  loader: () => import('./views/Base/EntityType/ManageEntityType'),
+  loader: () => import('./views/Dharma/EntityType/ManageEntityType'),
   loading: Loading,
 });
 
 const CreateEntity = Loadable({
-  loader: () => import('./views/Base/Entity/CreateEntity'),
+  loader: () => import('./views/Dharma/Entity/CreateEntity'),
   loading: Loading,
 });
 
 const ManageEntity = Loadable({
-  loader: () => import('./views/Base/Entity/ManageEntity'),
+  loader: () => import('./views/Dharma/Entity/ManageEntity'),
   loading: Loading,
 });
 
 const CreateMenuType = Loadable({
-  loader: () => import('./views/Base/Menu/MenuType/CreateMenuType'),
+  loader: () => import('./views/Dharma/Menu/MenuType/CreateMenuType'),
   loading: Loading,
 });
 const ManageMenuType = Loadable({
-  loader: () => import('./views/Base/Menu/MenuType/ManageMenuType'),
+  loader: () => import('./views/Dharma/Menu/MenuType/ManageMenuType'),
   loading: Loading,
 });
 const CreateMenuElement = Loadable({
-  loader: () => import('./views/Base/Menu/MenuElements/CreateMenuElement'),
+  loader: () => import('./views/Dharma/Menu/MenuElements/CreateMenuElement'),
   loading: Loading,
 });
 const ManageMenuElement = Loadable({
-  loader: () => import('./views/Base/Menu/MenuElements/ManageMenuElement'),
+  loader: () => import('./views/Dharma/Menu/MenuElements/ManageMenuElement'),
   loading: Loading ,
 });
 const CreatePeople = Loadable({
-  loader: () => import('./views/Base/People/People/CreatePeople'),
+  loader: () => import('./views/Dharma/People/People/CreatePeople'),
   loading:Loading,
 });
 const Login=Loadable({
@@ -89,7 +91,7 @@ const Login=Loadable({
   loading: Loading,
 });
 const ManagePeople=Loadable({
-  loader: () =>import('./views/Base/People/People/ManagePeople'),
+  loader: () =>import('./views/Dharma/People/People/ManagePeople'),
   loading: Loading,
 });
 

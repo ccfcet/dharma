@@ -14,7 +14,7 @@ import 'simple-line-icons/css/simple-line-icons.css';
 import './scss/style.css'
 
 // Containers
-import { DefaultLayout } from './containers';
+import { DefaultLayout, DharmaLayout } from './containers';
 // Pages
 import { Login, Page404, Page500, Register } from './views/Pages';
 
@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <HashRouter>
         <Switch>
-        <Route exact path="/dashboard" name="Home" component={DefaultLayout} />
+        <Route exact path="/dashboard" name="Home" component={DharmaLayout} />
           <Route exact path="/register" name="Register Page" component={Register} />
           <Route exact path="/404" name="Page 404" component={Page404} />
           <Route exact path="/500" name="Page 500" component={Page500} />

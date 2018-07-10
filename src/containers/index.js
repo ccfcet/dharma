@@ -1,3 +1,4 @@
 import DefaultLayout from './DefaultLayout';
+import DharmaLayout from './DharmaLayout'
 
-export { DefaultLayout };
+export { DefaultLayout,DharmaLayout };
