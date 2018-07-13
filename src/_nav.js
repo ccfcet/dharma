@@ -40,6 +40,11 @@ export default {
             icon:'icon-puzzle',
             url:'/base/ManageEntity',
         },
+        {
+            name:'Find Entity by Id',
+            icon:'icon-puzzle',
+            url:'/base/FindEntity'
+        },
         
 
 

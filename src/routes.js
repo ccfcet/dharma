@@ -8,6 +8,7 @@ import DharmaLayout from './containers/DharmaLayout';
 function Loading() {
   return <div>Loading...</div>;
 }
+////
 
 const Breadcrumbs = Loadable({
   loader: () => import('./views/Base/Breadcrumbs'),
@@ -42,8 +43,6 @@ const Forms = Loadable({
 
 
 
-//custom
-
 
 const CreateEntityType = Loadable({
   loader: () => import('./views/Dharma/EntityType/CreateEntityType'),
@@ -63,6 +62,11 @@ const CreateEntity = Loadable({
 
 const ManageEntity = Loadable({
   loader: () => import('./views/Dharma/Entity/ManageEntity'),
+  loading: Loading,
+});
+
+const FindEntity = Loadable({
+  loader: () => import('./views/Dharma/Entity/FindEntity'),
   loading: Loading,
 });
 
@@ -278,6 +282,7 @@ const routes = [
   {path:  '/base/ManageEntityType', name: 'ManageEntityType', component:ManageEntityType},
   {path: '/base/CreateEntity', name:'CreateEntity',component: CreateEntity },
   {path: '/base/ManageEntity', name:'ManageEntity', component:ManageEntity },
+  {path: '/base/FindEntity' , name:'FindEntity' , component:FindEntity},
   {path: '/base/CreateMenuType', name:'CreateMenuType', component:CreateMenuType },
   {path: '/base/ManageMenuType', name:'ManageMenuType', component:ManageMenuType },
   {path: '/base/CreateMenuElement', name:'CreateMenuElement', component:CreateMenuElement },

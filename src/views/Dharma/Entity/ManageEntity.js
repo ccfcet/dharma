@@ -24,12 +24,23 @@ import {
 
  
 class Tables extends Component {
-UpdateEntry(e){
-   ReactDOM.render(
-    <UpdateEntity/>,document.getElementById('root')
-  );
+  constructor(props){
+    super(props);
+    this.state={
+      update:false,
+    }
   }
+UpdateEntry(){
+   this.setState({update:true});
+  }
+
   render() {
+    if(this.state.update){
+      return(
+        <UpdateEntity/>
+        )
+    }
+    else
     return (
       <div className="animated fadeIn">
         <Row>
@@ -55,7 +66,7 @@ UpdateEntry(e){
                     <FormGroup>
                       <Input type="button" id="delete" value="Delete Entity" />
                       <br/>
-                      <Input type="button" onClick={this.UpdateEntry} id="update" value="Update Entity" />
+                      <Input type="button" onClick={this.UpdateEntry.bind(this)} id="update" value="Update Entity" />
 
                     </FormGroup>
                     </td>
