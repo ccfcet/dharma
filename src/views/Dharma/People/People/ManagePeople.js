@@ -18,12 +18,7 @@ import {
 } from 'reactstrap';
 
 class ManagePeople extends React.Component{
-	// UpdateEntry()
-	// {
- //   ReactDOM.render(
- //    <UpdateMenuElement/>,document.getElementById('root')
- //  );
-	// }
+	
 	render()
 	{
 		return(

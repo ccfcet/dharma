@@ -18,14 +18,23 @@ import {
 } from 'reactstrap';
 
 class ManageMenuType extends React.Component{
-	UpdateEntry()
-	{
-   ReactDOM.render(
-    <UpdateMenuType/>,document.getElementById('root')
-  );
-	}
+	constructor(props)
+  {
+    super(props)
+    this.state={
+      update:false,
+    }
+
+  }
+  UpdateEntry()
+  {
+    this.setState({update:true});
+  }
 	render()
 	{
+  if(this.state.update)
+    return(<UpdateMenuType/>);
+  else  
 	return (
       <div className="animated fadeIn">
         <Row>
@@ -53,7 +62,7 @@ class ManageMenuType extends React.Component{
                     <FormGroup>
                       <Input type="button" id="delete" value="Delete" />
                       <br/>
-                      <Input type="button" onClick={this.UpdateEntry} id="update" value="Update" />
+                      <Input type="button" onClick={this.UpdateEntry.bind(this)} id="update" value="Update" />
 
                     </FormGroup>
                     </td>
