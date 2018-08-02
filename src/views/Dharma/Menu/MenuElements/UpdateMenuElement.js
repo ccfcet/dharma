@@ -37,7 +37,7 @@ class UpdateMenuElement extends React.Component{
                       <Input type="button" id="submit" value="Submit" />
                       <br/>
             
-                      <a href="/"><h4>Cancel</h4></a>
+                      <a href="#/dashboard"><h4>Cancel</h4></a>
                      
                       </div>
                     </FormGroup>
