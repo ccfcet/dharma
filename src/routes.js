@@ -79,6 +79,14 @@ const ManageMenuData=Loadable({
   loader:  () =>import('./views/Dharma/Menu/MenuData/ManageMenuData'),
   loading: Loading,
 });
+const CreateEvent=Loadable({
+  loader: () =>import('./views/Dharma/Event/Events/CreateEvent'),
+  loading: Loading,
+});
+const ManageEvent=Loadable({
+  loader: () =>import('./views/Dharma/Event/Events/ManageEvent'),
+  loading: Loading,
+});
 
 
 
@@ -99,6 +107,8 @@ const routes = [
   {path:'/base/ManagePeople', name:'ManagePeople', component:ManagePeople},
   {path:'/base/CreateMenuData', name:'CreateMenuData', component:CreateMenuData},
   {path: '/base/ManageMenuData', name:'ManageMenuData', component:ManageMenuData},
+  {path:'/base/CreateEvent', name:'Create Event', component:CreateEvent},
+  {path:'/base/ManageEvent', name:'Manage Event', component:ManageEvent},
 
 ];
 

@@ -118,6 +118,31 @@ export default {
 
 
     },
+    {
+        name:'Event',
+        icon:'icon-puzzle',
+        children:[
+        {
+            name:'Events',
+            url:'/base',
+            children:[
+            {
+                name:'Create Event',
+                icon:'icon-puzzle',
+                url:'/base/CreateEvent',
+            },
+            {
+                name:'Manage Event',
+                icon:'icon-puzzle',
+                url:'/base/ManageEvent',
+            }
+            ]
+        },
+        {
+
+        }
+        ]
+    }
 
 
   ]
