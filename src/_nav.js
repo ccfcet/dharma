@@ -7,17 +7,17 @@ export default {
       children: [
         {
             name:'Create Entity',
-            icon:'icon-puzzle',
+           
             url:'/base/CreateEntity',
         },
         {
             name:'Manage Entity',
-            icon:'icon-puzzle',
+            
             url:'/base/ManageEntity',
         },
         {
             name:'Find Entity by Id',
-            icon:'icon-puzzle',
+            
             url:'/base/FindEntity'
         },
         
@@ -25,17 +25,17 @@ export default {
 
       {
         name:'Entity Type',
-        icon:'icon-puzzle',
+       
         children:[ 
         {
           name: 'Create Entity Type',
           url: '/base/CreateEntityType',
-          icon: 'icon-puzzle',
+         
         },
         {
           name: 'Manage Entity Type',
           url: '/base/ManageEntityType',
-          icon: 'icon-puzzle',
+          
         }
       ]
     }
@@ -48,50 +48,50 @@ export default {
         children:[
         {
             name:'Menu Type',
-            icon:'icon-puzzle',
+            
             children:[
             {
                 name:'Create Menu Type',
-                icon:'icon-puzzle',
+               
                 url:'/base/CreateMenuType'
             },
             {
                 name:'Manage Menu Type',
-                icon:'icon-puzzle',
+               
                 url:'/base/ManageMenuType'
             },
             ]
         },
         {
             name:'Menu Elements',
-            icon:'icon-puzzle',
+            
             url: '/base',
             children:[
             {
                 name:'Create Elements',
-                icon:'icon-puzzle',
+               
                 url:'/base/CreateMenuElement'
             },
             {
                 name:'Manage Elements',
-                icon:'icon-puzzle',
+                
                 url:'/base/ManageMenuElement'
             },
             ]
         },
         {
             name:'Menu Data',
-            icon:'icon-puzzle',
+        
             url: '/base',
             children:[
             {
                 name:'Create Menu Data',
-                icon:'icon-puzzle',
+               
                 url:'/base/CreateMenuData'
             },
             {
                 name:'Manage Menu Data',
-                icon:'icon-puzzle',
+                
                 url:'/base/ManageMenuData'
             },
             ]
@@ -105,12 +105,12 @@ export default {
         children:[
          {
             name:'Create People',
-            icon:'icon-puzzle',
+           
             url:'/base/CreatePeople'
         },
         {
             name:'Manage People',
-            icon:'icon-puzzle',
+           
             url:'/base/ManagePeople'
         },
 
@@ -128,19 +128,29 @@ export default {
             children:[
             {
                 name:'Create Event',
-                icon:'icon-puzzle',
+    
                 url:'/base/CreateEvent',
             },
             {
                 name:'Manage Event',
-                icon:'icon-puzzle',
+            
                 url:'/base/ManageEvent',
             }
             ]
         },
         {
-
-        }
+            name:'Event Info Slug',
+            children:[
+            {
+                name:'Create Slug',
+                url:'/base/CreateEventSlug',
+            },
+            {
+                name:'Manage Slug',
+                url:'/base/ManageEventSlug',
+            }
+            ]
+        },
         ]
     }
 

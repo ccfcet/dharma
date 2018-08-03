@@ -87,6 +87,14 @@ const ManageEvent=Loadable({
   loader: () =>import('./views/Dharma/Event/Events/ManageEvent'),
   loading: Loading,
 });
+const CreateEventSlug=Loadable({
+  loader: () =>import('./views/Dharma/Event/EventInfromationSlug/CreateEventInformationSlug'),
+  loading: Loading,
+});
+const ManageEventSlug=Loadable({
+  loader: () =>import('./views/Dharma/Event/EventInfromationSlug/ManageEventInformationSlug'),
+  loading: Loading,
+});
 
 
 
@@ -109,7 +117,8 @@ const routes = [
   {path: '/base/ManageMenuData', name:'ManageMenuData', component:ManageMenuData},
   {path:'/base/CreateEvent', name:'Create Event', component:CreateEvent},
   {path:'/base/ManageEvent', name:'Manage Event', component:ManageEvent},
-
+  {path: '/base/CreateEventSlug', name:'Create Event Slug',component:CreateEventSlug},
+  {path: '/base/ManageEventSlug', name:'Manage Event Slug',component:ManageEventSlug},
 ];
 
 export default routes;
